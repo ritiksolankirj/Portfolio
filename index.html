@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ritik Solanki - Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #eee;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #00cccc;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+    }
+
+    header {
+      text-align: center;
+      padding-top: 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #00ffff;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    header img {
+      margin: 20px 0;
+      border-radius: 50%;
+      border: 4px solid #00ffff;
+      box-shadow: 0 0 20px #00ffff;
+      width: 150px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    section {
+      margin: 40px 0;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid #00ffff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      color: #00ffff;
+    }
+
+    .edu-item, .project, .skills-list li, .softskills-list li, .accomplishments-list li {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 12px 18px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .edu-item:hover, .project:hover, .skills-list li:hover, .softskills-list li:hover, .accomplishments-list li:hover {
+      transform: scale(1.02);
+    }
+
+    .edu-item h3, .project h3 {
+      margin-bottom: 5px;
+      color: #00ffff;
+    }
+
+    .edu-item span {
+      font-style: italic;
+      color: #aaa;
+    }
+
+    .project p {
+      font-style: italic;
+      color: #ccc;
+    }
+
+    .project ul {
+      padding-left: 20px;
+    }
+
+    .skills-list, .softskills-list, .accomplishments-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer {
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9rem;
+      padding: 30px 0;
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      section h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ritik Solanki</h1>
+      <img src="profile pasportsize photo 11.png" alt="Ritik Solanki" />
+      <p>
+        <a href="mailto:ritiksolanki7002@gmail.com">ritiksolanki7002@gmail.com</a> |
+        <a href="https://www.linkedin.com/in/ritik-solanki-9790ba247/" target="_blank">LinkedIn</a> |
+        <p>GitHub: <a href="https://github.com/ritiksolankirj" target="_blank">github.com/ritiksolankirj</a></p>
+        +91 9893749436
+      </p>
+    </header>
+
+    <section id="objective">
+      <h2>Objective</h2>
+      <p>Recent Computer Science undergraduate passionate about software development. Seeking an entry-level software engineering role to apply my skills in full-stack development and databases.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="edu-item">
+        <h3>Shivajirao Kadam Institute of Technology and Management, RGPV</h3>
+        <span>Indore, India | 2021 – 2025</span>
+        <p>Bachelor of Engineering in Computer Science</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Swiggy Database</h3>
+        <p>SQL, MySQL, MS SQL</p>
+        <ul>
+          <li>Analyzed Zomato restaurant data, identifying 20+ cuisine patterns and user preferences to improve data-driven marketing decisions by 15%.</li>
+          <li>Developed SQL queries to extract key data points for marketing campaigns and business analysis.</li>
+          <li>Optimized database performance by resolving data quality issues.</li>
+          <li>Created reports and visualizations to present insights to stakeholders.</li>
+        </ul>
+      </div>
+      <div class="project">
+        <h3>Alexa Virtual Assistant</h3>
+        <p>Python</p>
+        <ul>
+          <li>Integrated SpeechRecognition for voice command processing.</li>
+          <li>Utilized pyttsx3 for text-to-speech conversion with adjustable voice parameters.</li>
+          <li>Automated tasks using pywhatkit (WhatsApp messages, web search, etc.).</li>
+          <li>Handled audio input/output on Windows/macOS using pyaudio module.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="technical-skills">
+      <h2>Technical Skills</h2>
+      <ul class="skills-list">
+        <li><strong>Programming Languages:</strong> C, C++</li>
+        <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, React</li>
+        <li><strong>Databases:</strong> MySQL, MS SQL</li>
+        <li><strong>Tools/Platforms:</strong> Git, GitHub, VS Code</li>
+        <li><strong>Relevant Courses:</strong> DSA, OOP, Networks, DBMS, OS</li>
+      </ul>
+    </section>
+
+    <section id="soft-skills">
+      <h2>Soft Skills</h2>
+      <ul class="softskills-list">
+        <li>Languages: English, Hindi</li>
+        <li>Excellent communication skills</li>
+        <li>Strong teamwork and collaboration</li>
+        <li>Dependability and work ethic</li>
+        <li>Customer service orientation</li>
+      </ul>
+    </section>
+
+    <section id="accomplishments">
+      <h2>Accomplishments</h2>
+      <ul class="accomplishments-list">
+        <li>Strong performance in competitive programming challenges.</li>
+        <li>Completed AI Powered Data Analytics program by Geeks of Gurukul.</li>
+        <li>Proficient in Excel for data analysis, pivot tables, and automation.</li>
+        <li>Led school team to victory in inter-school competitions through leadership.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ritiksolanki7002@gmail.com">ritiksolanki7002@gmail.com</a></p>
+      <p>Phone: +91 9893749436</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ritik-solanki-9790ba247/" target="_blank">ritik-solanki-9790ba247</a></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Ritik Solanki
+  </footer>
+</body>
+</html>
